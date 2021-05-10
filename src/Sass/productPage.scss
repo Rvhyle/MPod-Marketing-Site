@@ -1,0 +1,129 @@
+//Color
+$base-color: #f7f7f7;
+$heading-color: #393e46;
+$subheading-color: #929aab;
+
+//breakpoints
+$tablet: 768px;
+$laptop: 1280px;
+
+.main-container {
+  #feat-heading {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  .features-container {
+    width: 85%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    margin: auto;
+  }
+
+  .form-container {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    #contact-heading {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 50px;
+      text-transform: uppercase;
+    }
+
+    .input-container {
+      margin: auto;
+      margin-top: 30px;
+      label {
+        display: block;
+      }
+
+      input {
+        width: 100%;
+        border-radius: 10px solid black;
+      }
+    }
+
+    button {
+      border: none;
+      background-color: #393e46;
+      color: $base-color;
+      padding: 5px 5px;
+      margin-top: 20px;
+    }
+
+    span {
+      opacity: 50%;
+      padding-left: 5px;
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .main-container {
+    #feat-heading {
+      font-size: 3rem;
+    }
+
+    .form-container {
+      width: 75%;
+      .input-container {
+        label {
+          font-size: 2rem;
+        }
+
+        input {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .main-container {
+    #feat-heading {
+      font-size: 2rem;
+    }
+
+    .features-container {
+      width: 90%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      width: 60%;
+      margin-bottom: 100px;
+      #contact-heading {
+        margin-top: 250px;
+      }
+
+      .input-container {
+        label {
+          font-size: 1.5rem;
+        }
+
+        input {
+          height: 40px;
+        }
+      }
+
+      button {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
