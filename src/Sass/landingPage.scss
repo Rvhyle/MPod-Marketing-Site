@@ -81,6 +81,7 @@ $laptop: 1440px;
 @media screen and (min-width: $laptop) {
   .product-container {
     height: 1000px;
+    margin-top: 0px;
   }
   .container {
     .cpx-container {
