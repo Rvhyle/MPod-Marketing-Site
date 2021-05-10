@@ -1,6 +1,6 @@
 # MPod Luminous 
 
-####  Marketing Site for our CS100 Semester Project
+Marketing Site for our CS100 Semester Project
 
 
 
